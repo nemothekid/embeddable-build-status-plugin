@@ -53,6 +53,15 @@ public class ImageResolver {
                 new StatusImage("build-unknown-lightgrey-flat.svg")
         };
         styles.put("flat", flatImages);
+        // shields.io "flat-square" style
+        StatusImage[] flatSquareImages = new StatusImage[] {
+                new StatusImage("build-failing-red-flat-square.svg"),
+                new StatusImage("build-unstable-yellow-flat-square.svg"),
+                new StatusImage("build-passing-brightgreen-flat-square.svg"),
+                new StatusImage("build-running-blue-flat-square.svg"),
+                new StatusImage("build-unknown-lightgrey-flat-square.svg")
+        };
+        styles.put("flat-square", flatSquareImages);
         // Pick a default style
         defaultStyle = flatImages;
         styles.put("default", defaultStyle);
